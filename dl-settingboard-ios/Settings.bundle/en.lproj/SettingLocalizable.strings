@@ -1,0 +1,22 @@
+/* 
+  setting.strings
+  Founctions
+
+  Created by limingzou on 2017/7/9.
+  Copyright © 2017年 limingzou. All rights reserved.
+*/
+
+//normal
+"setting.common.ok" = "Know";
+"setting.common.prompt" = "prompt";
+"setting.common.save" = "Save";
+"setting.common.submit" = "Submit";
+"setting.common.Wi-FiName" = "Wi-Fi Name";
+"setting.common.Wi-FiPass" = "Wi-Fi Password";
+"setting.common.Wi-FiName.placeholder" = "请输入新的WI-FI名称";
+"setting.common.Wi-FiPass.placeholder" = "请输入8位到20位的新密码";
+"setting.common.Wi-FiName.requireMsg" = "WI-FI名称 不能为空";
+"setting.common.Wi-FiPass.requireMsg" = "WI-FI密码 不能为空";
+
+//
+"setting.common.resolution" = "Resolution";
