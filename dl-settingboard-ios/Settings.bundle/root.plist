@@ -103,9 +103,9 @@
 					<key>DefaultValue</key>
 					<integer>0</integer>
 					<key>MinimumValue</key>
-					<integer>-3</integer>
+					<integer>-2</integer>
 					<key>MaximumValue</key>
-					<integer>3</integer>
+					<integer>2</integer>
 					<key>Steps</key>
 					<integer>12</integer>
 				</dict>
@@ -328,9 +328,9 @@
 					<key>DefaultValue</key>
 					<integer>0</integer>
 					<key>MinimumValue</key>
-					<integer>-3</integer>
+					<integer>-2</integer>
 					<key>MaximumValue</key>
-					<integer>3</integer>
+					<integer>2</integer>
 					<key>Steps</key>
 					<integer>12</integer>
 				</dict>
