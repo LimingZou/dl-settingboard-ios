@@ -536,6 +536,7 @@
 				C0BC76981F12742800265BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0BC76991F12742800265BEF /* Build configuration list for PBXNativeTarget "dl-settingboard-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +545,7 @@
 				C0BC769B1F12742800265BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0BC769C1F12742800265BEF /* Build configuration list for PBXNativeTarget "dl-settingboard-iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +554,7 @@
 				C0BC769E1F12742800265BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
