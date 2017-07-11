@@ -19,6 +19,12 @@ static NSString *const kInitialize= @"d-initialize";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    float i = 1.6666666;
+    
+    ;
+    
+    NSLog(@"test: %f",[[NSString stringWithFormat:@"%.1f",i] floatValue]);
 }
 - (IBAction)setupSettingBoard:(id)sender {
     [self setup];
