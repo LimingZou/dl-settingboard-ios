@@ -11,7 +11,11 @@
 static NSString *const kShutdown= @"c-shutdown";
 static NSString *const kInitialize= @"d-initialize";
 
+typedef void(^ShutBlock)();
+
 @interface ViewController ()<DLNVTSettingBoardDelegate>
+
+@property (nonatomic, copy) ShutBlock shut;
 
 @end
 
@@ -115,12 +119,34 @@ static NSString *const kInitialize= @"d-initialize";
     }
 }
 
-- (void)settingsBoardFailure:(DLNVTSettingBoard *)board failureDetails:(DLFailureSet)failureDetails{
+- (void)settingsBoardFailure:(DLNVTSettingBoard *)board failureDetails:(DLFailureSet)failureDetails shut:(void (^)())shut{
+    _shut = shut;
     DLFailureSet failureSet = failureDetails;
+    __block NSString * message = @" ";
+    __block int i = 0;
     [failureSet enumerateObjectsUsingBlock:^(DLFailureDetails * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        i ++;
+        message = [message stringByAppendingFormat:@"%zd.%@ \n",i, obj.title];
         NSLog(@"发送失败的指令key:%@, title:%@",obj.key, obj.title);
     }];
+    
+    
+    UIAlertView *alertView = [[UIAlertView alloc] init];
+    [alertView setTitle:@"温馨提示"];
+    [alertView setMessage:[NSString stringWithFormat:@"请求出错的指令:\n%@\n是否继续进行请求操作?", message]];
+    
+    [alertView addButtonWithTitle:@"继续"];
+    [alertView addButtonWithTitle:@"设置完成"];
+    
+    [alertView setDelegate:self];
+    [alertView show];
+    alertView = nil;
 }
 
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1) {
+        _shut();
+    }
+}
 
 @end

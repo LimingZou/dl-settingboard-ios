@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C06030471F171EE700BECE79 /* DLMobileNVTSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C06030451F171EE700BECE79 /* DLMobileNVTSDKUI.framework */; };
-		C06030481F171EE700BECE79 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C06030461F171EE700BECE79 /* Settings.bundle */; };
+		C0919F3B1F18D52C00391C70 /* DLMobileNVTSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0919F391F18D52C00391C70 /* DLMobileNVTSDKUI.framework */; };
+		C0919F3C1F18D52C00391C70 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0919F3A1F18D52C00391C70 /* Settings.bundle */; };
 		C0BC766E1F12742800265BEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BC766D1F12742800265BEF /* main.m */; };
 		C0BC76711F12742800265BEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BC76701F12742800265BEF /* AppDelegate.m */; };
 		C0BC76741F12742800265BEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BC76731F12742800265BEF /* ViewController.m */; };
@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C06030451F171EE700BECE79 /* DLMobileNVTSDKUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DLMobileNVTSDKUI.framework; sourceTree = "<group>"; };
-		C06030461F171EE700BECE79 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C0919F391F18D52C00391C70 /* DLMobileNVTSDKUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DLMobileNVTSDKUI.framework; sourceTree = "<group>"; };
+		C0919F3A1F18D52C00391C70 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C0BC76691F12742800265BEF /* dl-settingboard-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dl-settingboard-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BC766D1F12742800265BEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0BC766F1F12742800265BEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06030471F171EE700BECE79 /* DLMobileNVTSDKUI.framework in Frameworks */,
+				C0919F3B1F18D52C00391C70 /* DLMobileNVTSDKUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +83,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C06030441F171EE700BECE79 /* soucre */ = {
+		C0919F381F18D52C00391C70 /* soucre */ = {
 			isa = PBXGroup;
 			children = (
-				C06030451F171EE700BECE79 /* DLMobileNVTSDKUI.framework */,
-				C06030461F171EE700BECE79 /* Settings.bundle */,
+				C0919F391F18D52C00391C70 /* DLMobileNVTSDKUI.framework */,
+				C0919F3A1F18D52C00391C70 /* Settings.bundle */,
 			);
 			path = soucre;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 		C0BC76601F12742800265BEF = {
 			isa = PBXGroup;
 			children = (
-				C06030441F171EE700BECE79 /* soucre */,
+				C0919F381F18D52C00391C70 /* soucre */,
 				C0BC766B1F12742800265BEF /* dl-settingboard-ios */,
 				C0BC76851F12742800265BEF /* dl-settingboard-iosTests */,
 				C0BC76901F12742800265BEF /* dl-settingboard-iosUITests */,
@@ -264,7 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06030481F171EE700BECE79 /* Settings.bundle in Resources */,
+				C0919F3C1F18D52C00391C70 /* Settings.bundle in Resources */,
 				C0BC767C1F12742800265BEF /* LaunchScreen.storyboard in Resources */,
 				C0BC76791F12742800265BEF /* Assets.xcassets in Resources */,
 				C0BC76771F12742800265BEF /* Main.storyboard in Resources */,
@@ -452,6 +452,7 @@
 					"$(PROJECT_DIR)/soucre",
 				);
 				INFOPLIST_FILE = "dl-settingboard-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrdlliming.;
@@ -470,6 +471,7 @@
 					"$(PROJECT_DIR)/soucre",
 				);
 				INFOPLIST_FILE = "dl-settingboard-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrdlliming.;

@@ -49,7 +49,7 @@ extern NSString *DLSettingUILocalizable(NSString *key);
 
 - (void)settingsBoardSingle:(DLNVTSettingBoard *)board valueHasChanged:(NSDictionary*)newValue  success:(void (^)(NSString *key))success failure:(void (^)(NSString *key))failure stop:(void(^)(BOOL *stop))stop;
 
-- (void)settingsBoardFailure:(DLNVTSettingBoard *)board failureDetails:(DLFailureSet)failureDetails;
+- (void)settingsBoardFailure:(DLNVTSettingBoard *)board failureDetails:(DLFailureSet)failureDetails shut:(void(^)())shut;
 
 @end
 
