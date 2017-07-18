@@ -143,6 +143,7 @@ typedef void(^ShutBlock)();
     alertView = nil;
 }
 
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 1) {
         _shut();

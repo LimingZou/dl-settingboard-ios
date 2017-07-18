@@ -1,0 +1,6 @@
+framework module DLMobileNVTSDKUI {
+  umbrella header "DLMobileNVTSDKUI.h"
+
+  export *
+  module * { export * }
+}
